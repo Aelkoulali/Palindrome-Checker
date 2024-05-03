@@ -15,6 +15,7 @@
 body {
   color: var(--white);
   background-color: var(--dark-grey);
+ 
 }
 
 .container {
@@ -23,13 +24,35 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  max-width: 600px;
-  
+    
 }
 
 .text {
   margin-top: 20px;
-  padding: 50px;
-  border: solid 1px #ffffff;
+  padding: 30px;
   border-radius: 10px;
+  background-color: #ffffff;
+  color : var(--dark-grey);
+  width: 600px;
+
+}
+
+.text > input{
+  border-radius: 10px;
+  padding: 5px; 
+  width: 350px;
+}
+
+.text > p{
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
+
+.text > button {
+  background-color:var(--dark-grey);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 150px;
 }
