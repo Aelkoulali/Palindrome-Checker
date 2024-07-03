@@ -1,15 +1,15 @@
 // Get Element By Id
-const userInput = document.getElementById('text-ipnut');
+const textInput = document.getElementById('text-ipnut');
 const checkButton = document.getElementById('check-btn');
-const resultDiv = document.getElementById('result');
+const result = document.getElementById('result');
 
-//Function to check for palindrome
-
-const checkForPalindrome = input => {
-    const originalInput = input; // Store for later output
-  
-    if (input === '') {
-      alert('Please input a value');
-      return;
-    }
-    }
+//Function Alert
+checkButton.addEventListener("click",() => {
+  if (textInput.value === ""){
+    alert("Please input a value")
+  } else if (textInput.value.length === 1){
+    result.innerText = `${textInput.value} is a palindrome`
+ }  else if (textInput.value.length === [...textInput.value].reverse().join("")){
+    result.innerText = `${textInput.value} is a palindrome`
+ }
+});
