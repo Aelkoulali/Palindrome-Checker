@@ -3,7 +3,7 @@ const textInput = document.getElementById('text-ipnut');
 const checkButton = document.getElementById('check-btn');
 const result = document.getElementById('result');
 
-//Function Alert
+// EventListener 
 checkButton.addEventListener("click",() => {
   const lowerReplaced = textInput.value.toLowerCase().replace(/[^A-Za-z0-9]/g,"")
   if (textInput.value === ""){
